@@ -6,6 +6,8 @@
       <class name="createUser.createUser">
         <methods>
           <include name="launchBrowser"/>
+          <include name="pub"/>
+          <include name="launchbrowser"/>
         </methods>
       </class> <!-- createUser.createUser -->
     </classes>

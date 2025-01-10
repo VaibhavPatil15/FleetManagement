@@ -1,18 +1,37 @@
-package listnersUtils;
+package ListnerUtils;
 
+import java.io.IOException;
+
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import frameworkUtils.reusableComponent;
+import seleniumUtils.seleniumActions;
 
-public class eventListner implements ITestListener {
+public class eventListner implements ITestListener,ISuiteListener {
+
+	@Override
+	public void onStart(ISuite suite) {
+		// TODO Auto-generated method stub
+		ISuiteListener.super.onStart(suite);
+		System.out.println("Execution Started For URL : "+reusableComponent.url);
+	}
+
+	@Override
+	public void onFinish(ISuite suite) {
+		// TODO Auto-generated method stub
+		ISuiteListener.super.onFinish(suite);
+	}
 
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestStart(result);
-		System.out.println("Execution Started For URL : "+reusableComponent.url);
+		//System.out.println(result.);
+		
 	}
 
 	@Override
@@ -25,6 +44,13 @@ public class eventListner implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestFailure(result);
+		String methodName=result.getMethod().getMethodName();
+		try {
+			seleniumActions.takescreeshot(methodName);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override

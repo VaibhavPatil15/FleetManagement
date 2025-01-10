@@ -3,6 +3,7 @@ package excelUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.xssf.eventusermodel.XSSFSheetXMLHandler;
@@ -19,6 +20,14 @@ public class readExcelData {
 		XSSFSheet sheet = ws.getSheet("TestData");
 		String data = sheet.getRow(rowNum).getCell(colNum).getStringCellValue();
 		return data;
+		
+//		File file = new File(reusableComponent.propertiesFile);
+//		FileInputStream stream = new FileInputStream(file);
+//		Properties prop = new Properties();
+//		prop.load(stream);
+//		String data = prop.getProperty(key);
+//		return data;
+		
 	}
 
 }
