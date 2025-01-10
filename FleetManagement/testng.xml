@@ -8,6 +8,7 @@
 		<classes>
 			<class name="createUser.createUser" />
 			<class name="createUser.handleWait" />
+			<class name="createUser.handleFrame" />
 		</classes>
 	</test> <!--
 	Test -->
