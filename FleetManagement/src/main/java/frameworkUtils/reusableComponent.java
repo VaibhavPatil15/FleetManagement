@@ -10,7 +10,7 @@ public interface reusableComponent {
 	public static String url = "https://demo.guru99.com/test/newtours/register.php";
 	public static String alertUrl="https://demo.guru99.com/test/delete_customer.php";
 	public static String waiturl = "https://www.hyrtutorials.com/p/waits-demo.html#google_vignette";
-	public static String dataurl ="https://demo.guru99.com/test/web-table-element.php";
+	public static String tabledataurl ="https://demo.guru99.com/test/web-table-element.php";
 	public static String propertiesFile = "C:\\Users\\Vp671\\git\\FleetManagemnet\\FleetManagement\\OR\\objectRepositories";
 	public static String excelFilePath = "C:\\Users\\Vp671\\git\\FleetManagemnet\\FleetManagement\\src\\test\\resources\\TestData.xlsx";
 }

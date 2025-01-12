@@ -15,8 +15,8 @@ public class dataTable {
 
 	@BeforeTest
 	public static void launchbrowser() throws Exception {
-		browserInitilizer.readDriverUtils(reusableComponent.dataurl);
-		logger.info("is using URL " + reusableComponent.dataurl);
+		browserInitilizer.readDriverUtils(reusableComponent.tabledataurl);
+		logger.info("is using URL " + reusableComponent.tabledataurl);
 	}
 
 	@Test(priority = 1)
