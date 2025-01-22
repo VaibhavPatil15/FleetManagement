@@ -1,0 +1,22 @@
+############################################### Register Page ################################
+
+******************* REGISTER ****************
+contactInformation.FirstName.input=//input[@name='firstName']
+contactInformation.LastName.input=//input[@name='lastName']
+contactInformation.Phone.input=//input[@name='phone']
+contactInformation.Email.input=//input[@name='userName']
+
+******************* Mailing Information **************
+MailingInformation.Address.input=//input[@name='address1']
+MailingInformation.city.input=//input[@name='city']
+MailingInformation.state.input=//input[@name='state']
+MailingInformation.postalCode.input=//input[@name='postalCode']  
+MailingInformation.postalCode.select=//select[@name='country']/option[@value]
+MailingInformation.postalCode.selectTo=//select[@name='country']
+
+******************* User Information ********************
+UserInformation.Username.input=//input[@name='email']
+UserInformation.Password.input=//input[@name='password']
+UserInformation.confirmPassword.input=//input[@name='confirmPassword']
+
+submit.input=//input[@name='submit']

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser is launched and Maximized]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-01-19T15:44:02 IST" name="Default suite" finished-at="2025-01-19T15:44:25 IST" duration-ms="22520">
+    <groups>
+    </groups>
+    <test started-at="2025-01-19T15:44:02 IST" name="Default test" finished-at="2025-01-19T15:44:25 IST" duration-ms="22520">
+      <class name="createUser.userCreation">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:createUser.userCreation@4e31276e]" started-at="2025-01-19T15:44:02 IST" name="launchbrowser" finished-at="2025-01-19T15:44:09 IST" duration-ms="6441" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is launched and Maximized]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="launchBrowser()[pri:1, instance:createUser.userCreation@4e31276e]" started-at="2025-01-19T15:44:09 IST" name="launchBrowser" finished-at="2025-01-19T15:44:24 IST" duration-ms="15314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="pub()[pri:0, instance:createUser.userCreation@4e31276e]" started-at="2025-01-19T15:44:24 IST" name="pub" finished-at="2025-01-19T15:44:25 IST" duration-ms="581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pub -->
+      </class> <!-- createUser.userCreation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
