@@ -1,6 +1,7 @@
 package API;
 
-import org.openqa.selenium.devtools.v129.fetch.model.AuthChallengeResponse.Response;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 
 public class postRequest {
 	public static void main(String[] args) {
@@ -14,16 +15,16 @@ public class postRequest {
 				+ "   }\r\n"
 				+ "}").when().post("https://api.restful-api.dev/objects")
 				.then().extract().response();
-		System.out.println(postrequest.statusCode);
-		System.out.println(postrequest.body.asString());
+		System.out.println(postrequest.statusCode());
+		System.out.println(postrequest.body().asString());
 		
 		
-		String pathResponce=postrequest.jsonPath.getString("id").toString();
-		Response gettrequest =RestAssured.given().headers("content-type", "application/json").when().get("https://api.restful-api.dev/objects/"+)
+		String pathResponce=postrequest.jsonPath().getString("id").toString();
+		Response gettrequest =RestAssured.given().headers("content-type", "application/json").when().get("https://api.restful-api.dev/objects/"+pathResponce)
 				.then().extract().response();
 		
-		System.out.println(postrequest.statusCode);
-		System.out.println(postrequest.body.asString());
+		System.out.println(postrequest.statusCode());
+		System.out.println(postrequest.body().asString());
 	}
 	
 	

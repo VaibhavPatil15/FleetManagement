@@ -24,7 +24,7 @@ public class handleAlert {
 		seleniumActions.click("//input[@type='submit']");
 		Thread.sleep(2000);
 		String msg=seleniumActions.alertAction(true);
-		seleniumActions.explicitWait(0, "")
+		seleniumActions.explicitWait(0, "");
 		logger.info(msg);
 	}
 

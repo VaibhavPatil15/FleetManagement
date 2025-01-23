@@ -3,6 +3,49 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="createUser.dataTable">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="pub"/>
+          <include name="handleTableData"/>
+        </methods>
+      </class> <!-- createUser.dataTable -->
+      <class name="createUser.calenderHandle">
+        <methods>
+          <include name="hanler"/>
+          <include name="launchbrowser"/>
+          <include name="pub"/>
+        </methods>
+      </class> <!-- createUser.calenderHandle -->
+      <class name="createUser.upload">
+        <methods>
+          <include name="handleWaitSelenium"/>
+          <include name="launchbrowser"/>
+          <include name="pub"/>
+        </methods>
+      </class> <!-- createUser.upload -->
+      <class name="createUser.handleFrame">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="pub"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- createUser.handleFrame -->
+      <class name="createUser.handleWait">
+        <methods>
+          <include name="explicitWaitSelenium"/>
+          <include name="handleWaitSelenium"/>
+          <include name="launchbrowser"/>
+          <include name="pub"/>
+        </methods>
+      </class> <!-- createUser.handleWait -->
+      <class name="createUser.handleAlert">
+        <methods>
+          <include name="pub"/>
+          <include name="launchbrowser"/>
+          <include name="alertActions"/>
+        </methods>
+      </class> <!-- createUser.handleAlert -->
       <class name="createUser.redbusData">
         <methods>
           <include name="handleWaitSelenium"/>
@@ -10,6 +53,27 @@
           <include name="pub"/>
         </methods>
       </class> <!-- createUser.redbusData -->
+      <class name="createUser.handleWindow">
+        <methods>
+          <include name="hanler"/>
+          <include name="pub"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- createUser.handleWindow -->
+      <class name="createUser.checkbox">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="pub"/>
+          <include name="checkBox"/>
+        </methods>
+      </class> <!-- createUser.checkbox -->
+      <class name="createUser.userCreation">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="launchbrowser"/>
+          <include name="pub"/>
+        </methods>
+      </class> <!-- createUser.userCreation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

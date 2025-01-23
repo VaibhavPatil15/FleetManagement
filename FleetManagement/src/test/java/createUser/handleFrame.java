@@ -5,11 +5,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import ObjectPropertiesUtils.readORData;
 import browser.browserInitilizer;
-import excelUtils.readExcelData;
 import frameworkUtils.reusableComponent;
-import seleniumUtils.seleniumActions;
 
 public class handleFrame {
 

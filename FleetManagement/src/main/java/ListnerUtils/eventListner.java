@@ -2,13 +2,10 @@ package ListnerUtils;
 
 import java.io.IOException;
 
-import org.testng.ISuite;
-import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import frameworkUtils.reusableComponent;
 import seleniumUtils.seleniumActions;
 
 public class eventListner implements ITestListener {
