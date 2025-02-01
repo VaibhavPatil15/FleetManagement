@@ -89,8 +89,8 @@ public class seleniumActions {
 
 	public static void takescreeshot(String name) throws IOException {
 
-		TakesScreenshot tc = (TakesScreenshot) browserInitilizer.driver;
-		File file = tc.getScreenshotAs(OutputType.FILE);
+		TakesScreenshot tc = (TakesScreenshot) browserInitilizer.driver;  //driver to Takescreenshot inteface
+		File file = tc.getScreenshotAs(OutputType.FILE); // screenshot intsance as File
 		FileUtils.copyFile(file,
 				new File("C:\\Users\\Vp671\\git\\FleetManagemnet\\FleetManagement\\screenShots\\" + name + ".png"));
 
